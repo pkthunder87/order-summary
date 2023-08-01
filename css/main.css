@@ -6,6 +6,11 @@
   --dark-blue: hsl(223, 47%, 23%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -23,13 +28,95 @@ body {
   text-align: center;
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--desaturated-blue);
   background-image: url(../images/pattern-background-desktop.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position-y: -5%;
   background-color: var(--pale-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summary {
+  display: grid;
+  height: 69rem;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 45rem;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.summary__top__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.summary__mid {
+  padding: 0 5rem;
+}
+.summary__mid__heading {
+  font-size: 2.8rem;
+  color: var(--dark-blue);
+}
+.summary__mid__plan {
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+.summary__mid__plan--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: start;
+}
+.summary__mid__plan--heading {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.summary__bot {
+  padding: 0 5rem;
+}
+.summary__bot__pay {
+  color: #fff;
+  padding: 1rem 4rem;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  margin-top: -3rem;
+}
+.summary__bot__cancel {
+  color: var(--dark-blue);
 }
 
 .attribution {
+  margin-top: 2rem;
   font-size: 11px;
   text-align: center;
 }
