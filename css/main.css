@@ -1,6 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
 }
 
 *,
@@ -10,8 +13,20 @@
           box-sizing: inherit;
 }
 
-body {
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
 }
 
 .attribution {
