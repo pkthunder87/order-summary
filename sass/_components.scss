@@ -18,14 +18,16 @@
   }
 
   &__mid {
-    padding: 0 5rem;
+    padding: 0 4.5rem;
+    margin-top: 3.8rem;
 
     &__heading {
-      font-size: 2.8rem;
+      font-size: 2.9rem;
       color: var(--dark-blue);
     }
 
     &__details {
+      margin-top: 1rem;
     }
     &__plan {
       background-color: var(--very-pale-blue);
@@ -46,22 +48,72 @@
         color: var(--dark-blue);
         font-weight: 700;
       }
+
+      &--change {
+        &:link,
+        &:visited {
+          color: var(--bright-blue);
+        }
+
+        &:hover,
+        &:active {
+          text-decoration: none;
+          color: #887fec;
+        }
+      }
     }
   }
 
   &__bot {
-    padding: 0 5rem;
+    padding: 0 4.5rem;
+    align-self: start;
+    height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
 
     &__pay {
-      color: #fff;
-      padding: 1rem 4rem;
+      // padding: 1.5rem 10rem;
       background-color: var(--bright-blue);
       border-radius: 10px;
-      margin-top: -3rem;
+      margin-top: 1.1rem;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 1.6rem 0;
+      width: 36rem;
+      cursor: pointer;
+      box-shadow: 0 2rem 2rem rgba(56, 41, 224, 0.15);
+
+      &:hover,
+      &:active {
+        background-color: #887fec;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #fff;
+      }
     }
 
     &__cancel {
-      color: var(--dark-blue);
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 3.5rem;
+      background-color: inherit;
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: var(--desaturated-blue);
+      }
+
+      a:hover,
+      a:active {
+        color: var(--dark-blue);
+      }
     }
   }
 }
