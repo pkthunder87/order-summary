@@ -23,8 +23,20 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+}
 
 body {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
@@ -33,7 +45,6 @@ body {
   background-image: url(../images/pattern-background-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: -5%;
   background-color: var(--pale-blue);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +60,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 2rem;
+  }
+}
 
 .summary {
   display: grid;
@@ -61,6 +77,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .summary {
+    height: 75rem;
+  }
 }
 .summary__top__img {
   height: 100%;
@@ -77,8 +98,19 @@ body {
   font-size: 2.9rem;
   color: var(--dark-blue);
 }
+@media only screen and (max-width: 400px) {
+  .summary__mid__heading {
+    font-size: 3.2rem;
+  }
+}
 .summary__mid__details {
   margin-top: 1rem;
+}
+@media only screen and (max-width: 400px) {
+  .summary__mid__details {
+    font-size: 2rem;
+    padding: 0 2.8rem;
+  }
 }
 .summary__mid__plan {
   background-color: var(--very-pale-blue);
@@ -90,6 +122,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 1.5rem 0;
+}
+@media only screen and (max-width: 400px) {
+  .summary__mid__plan {
+    margin-top: 3rem;
+  }
 }
 .summary__mid__plan--center {
   display: -webkit-box;
@@ -139,6 +176,11 @@ body {
   text-decoration: none;
   color: #fff;
 }
+@media only screen and (max-width: 400px) {
+  .summary__bot__pay {
+    padding: 2rem 0;
+  }
+}
 .summary__bot__cancel {
   border: none;
   font-size: 1.5rem;
@@ -157,7 +199,8 @@ body {
 }
 
 .attribution {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: -7rem;
   font-size: 11px;
   text-align: center;
 }

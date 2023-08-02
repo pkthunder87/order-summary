@@ -8,6 +8,10 @@
   overflow: hidden;
   align-items: center;
 
+  @media only screen and (max-width: 400px) {
+    height: 75rem;
+  }
+
   &__top {
     &__img {
       height: 100%;
@@ -24,10 +28,18 @@
     &__heading {
       font-size: 2.9rem;
       color: var(--dark-blue);
+
+      @media only screen and (max-width: 400px) {
+        font-size: 3.2rem;
+      }
     }
 
     &__details {
       margin-top: 1rem;
+      @media only screen and (max-width: 400px) {
+        font-size: 2rem;
+        padding: 0 2.8rem;
+      }
     }
     &__plan {
       background-color: var(--very-pale-blue);
@@ -37,6 +49,10 @@
       grid-template-columns: 1fr 2fr 1fr;
       align-items: center;
       margin: 1.5rem 0;
+
+      @media only screen and (max-width: 400px) {
+        margin-top: 3rem;
+      }
 
       &--center {
         display: flex;
@@ -94,6 +110,10 @@
       a:visited {
         text-decoration: none;
         color: #fff;
+      }
+
+      @media only screen and (max-width: 400px) {
+        padding: 2rem 0;
       }
     }
 
